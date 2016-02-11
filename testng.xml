@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  <suite name="My TestNG suite" parallel="methods">  -->
+<suite name="My TestNG suite">
+
+<test name="GRID TEST WITH SERIAL EXECTION WITH BROWSER FF"> 
+     <classes>
+     
+      <class name ="com.debarnab.testcases.LoginTestCase"/>  
+      <class name ="com.debarnab.testcases.Testing"/> 
+          
+    </classes>  
+    
+</test>
+ 
+</suite>

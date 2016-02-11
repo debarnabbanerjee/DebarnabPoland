@@ -3,9 +3,11 @@ package com.debarnab.testcases;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TestClass {
+import org.testng.annotations.Test;
 
-	public static void main(String[] args) {
+public class Testing {
+	@Test
+	public  void testcase() {
 		
 		String a = "A";
 		String b = "A";

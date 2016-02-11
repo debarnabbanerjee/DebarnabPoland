@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="322" started-at="2016-02-10T18:11:02Z" finished-at="2016-02-10T18:11:03Z">
+  <suite name="My TestNG suite" duration-ms="92" started-at="2016-02-11T17:43:58Z" finished-at="2016-02-11T17:43:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="322" started-at="2016-02-10T18:11:02Z" finished-at="2016-02-10T18:11:03Z">
+    <test name="GRID TEST WITH SERIAL EXECTION WITH BROWSER FF" duration-ms="92" started-at="2016-02-11T17:43:58Z" finished-at="2016-02-11T17:43:58Z">
+      <class name="com.debarnab.testcases.Testing">
+        <test-method status="PASS" signature="testcase()[pri:0, instance:com.debarnab.testcases.Testing@17b1517]" name="testcase" duration-ms="1" started-at="2016-02-11T18:43:58Z" finished-at="2016-02-11T18:43:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase -->
+      </class> <!-- com.debarnab.testcases.Testing -->
       <class name="com.debarnab.testcases.LoginTestCase">
-        <test-method status="PASS" signature="loginTestCase()[pri:0, instance:com.debarnab.testcases.LoginTestCase@d072a9]" name="loginTestCase" duration-ms="220" started-at="2016-02-10T19:11:02Z" finished-at="2016-02-10T19:11:03Z">
+        <test-method status="PASS" signature="loginTestCase()[pri:0, instance:com.debarnab.testcases.LoginTestCase@f67ac7]" name="loginTestCase" duration-ms="45" started-at="2016-02-11T18:43:58Z" finished-at="2016-02-11T18:43:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestCase -->
       </class> <!-- com.debarnab.testcases.LoginTestCase -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- GRID TEST WITH SERIAL EXECTION WITH BROWSER FF -->
+  </suite> <!-- My TestNG suite -->
 </testng-results>
