@@ -2,22 +2,48 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="My TestNG suite" duration-ms="92" started-at="2016-02-11T17:43:58Z" finished-at="2016-02-11T17:43:58Z">
+  <suite name="Default suite" duration-ms="218" started-at="2016-03-15T19:01:38Z" finished-at="2016-03-15T19:01:38Z">
     <groups>
     </groups>
-    <test name="GRID TEST WITH SERIAL EXECTION WITH BROWSER FF" duration-ms="92" started-at="2016-02-11T17:43:58Z" finished-at="2016-02-11T17:43:58Z">
-      <class name="com.debarnab.testcases.Testing">
-        <test-method status="PASS" signature="testcase()[pri:0, instance:com.debarnab.testcases.Testing@17b1517]" name="testcase" duration-ms="1" started-at="2016-02-11T18:43:58Z" finished-at="2016-02-11T18:43:58Z">
+    <test name="Default test" duration-ms="218" started-at="2016-03-15T19:01:38Z" finished-at="2016-03-15T19:01:38Z">
+      <class name="com.debarnab.testcases.LoginTestCase">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:com.debarnab.testcases.LoginTestCase@16eb2ec]" name="initialize" is-config="true" duration-ms="171" started-at="2016-03-15T20:01:38Z" finished-at="2016-03-15T20:01:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testcase -->
-      </class> <!-- com.debarnab.testcases.Testing -->
-      <class name="com.debarnab.testcases.LoginTestCase">
-        <test-method status="PASS" signature="loginTestCase()[pri:0, instance:com.debarnab.testcases.LoginTestCase@f67ac7]" name="loginTestCase" duration-ms="45" started-at="2016-02-11T18:43:58Z" finished-at="2016-02-11T18:43:58Z">
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="loginTestCase(java.lang.String, java.lang.String)[pri:0, instance:com.debarnab.testcases.LoginTestCase@16eb2ec]" name="loginTestCase" duration-ms="12" started-at="2016-03-15T20:01:38Z" data-provider="getData" finished-at="2016-03-15T20:01:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestCase -->
+        <test-method status="PASS" signature="loginTestCase(java.lang.String, java.lang.String)[pri:0, instance:com.debarnab.testcases.LoginTestCase@16eb2ec]" name="loginTestCase" duration-ms="1" started-at="2016-03-15T20:01:38Z" data-provider="getData" finished-at="2016-03-15T20:01:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[passwod2]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestCase -->
       </class> <!-- com.debarnab.testcases.LoginTestCase -->
-    </test> <!-- GRID TEST WITH SERIAL EXECTION WITH BROWSER FF -->
-  </suite> <!-- My TestNG suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

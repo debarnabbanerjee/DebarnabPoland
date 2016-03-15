@@ -15,27 +15,40 @@ public class Customutil {
 	private static Logger APP_LOG =null;
 	private static File dir =null;
 	private static SimpleDateFormat sdf =null;
-	private static Date d =null;
+	private static  FileInputStream ip =null;
+	private static FileInputStream fn = null;
+	private static Properties orpropp=null;
 	
 	public static void loadLogger(){
 		APP_LOG = Logger.getLogger("devpinoyLogger");		
 	}
 	
-	public static void loadPropFiles(){
+	public static void writeLog(String text){
+		loadLogger();
+		APP_LOG.debug(text);	
+	}
+	
+	public static void useMe(){
 		try{
 			loadLogger();
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream(new File(System.getProperty("user.dir")+"//project.properties"));
+			ip = new FileInputStream(new File(System.getProperty("user.dir")+"//project.properties"));
 			prop.load(ip);
+			
+			orpropp = new Properties();
+			fn = new FileInputStream(new File(System.getProperty("user.dir")+"//OR.properties"));
+			orpropp.load(fn);			
+			
 			APP_LOG.debug("Loaded the properties File");
 		}catch(Exception e){
 			APP_LOG.debug("Unable to load the properties File");
+			e.printStackTrace();
 		}		
 	}
 	
 	public static void createFolder(){
 		try{
-			loadPropFiles();
+			useMe();
 			sdf = new SimpleDateFormat("EEE MMM dd HH-mm-ss zzz yyyy");
 			String text = sdf.format(new Date()).toString();
 			//dir = new File(System.getProperty("user.dir")+"//Automtion Report_"+text);
